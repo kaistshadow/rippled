@@ -297,7 +297,7 @@ install (
   FILES
     src/ripple/beast/rfc2616.h
     src/ripple/beast/type_name.h
-    src/ripple/beast/unit_test.h
+    # src/ripple/beast/unit_test.h
     src/ripple/beast/xor_shift_engine.h
   DESTINATION include/ripple/beast)
 install (
@@ -343,6 +343,7 @@ add_executable (rippled src/ripple/app/main/Application.h)
 if (unity)
   set_target_properties(rippled PROPERTIES UNITY_BUILD ON)
 endif ()
+target_compile_options(rippled PRIVATE "-fPIC")
 target_sources (rippled PRIVATE
   #[===============================[
      main sources:
@@ -964,7 +965,8 @@ target_sources (rippled PRIVATE
      test sources:
        subdir: unit_test
   #]===============================]
-  src/test/unit_test/multi_runner.cpp)
+  src/test/unit_test/multi_runner.cpp
+  )
 target_link_libraries (rippled
   Ripple::boost
   Ripple::opts
