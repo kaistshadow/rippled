@@ -60,8 +60,8 @@ include(deps/gRPC)
 ###
 
 include(RippledCore)
-include(RippledInstall)
-include(RippledCov)
-include(RippledMultiConfig)
-include(RippledDocs)
-include(RippledValidatorKeys)
+# include(RippledInstall)
+# include(RippledCov)
+# include(RippledMultiConfig)
+# include(RippledDocs)
+# include(RippledValidatorKeys)
