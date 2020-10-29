@@ -46,6 +46,6 @@ if __name__ == '__main__':
     # exec_shell_cmd("export BOOST_ROOT=~/boost_1_70_0")
     # # create_ripple()
     # create_libarchive()
-    # create_sqlite3()
+    create_sqlite3()
     # create_soci()
     exec_shell_cmd(target)
