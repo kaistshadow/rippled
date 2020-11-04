@@ -58,6 +58,6 @@ if __name__ == '__main__':
     create_libarchive()
     create_sqlite3()
     create_soci()
-    exec_shell_cmd(target)
+    #exec_shell_cmd(target)
     commnet = "cd build && cp librippled.so " + path_target 
-    exec_shell_cmd(commnet)
+    #exec_shell_cmd(commnet)
