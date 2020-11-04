@@ -54,7 +54,7 @@ if __name__ == '__main__':
 
     boost_env_path = "export BOOST_ROOT=" + path_boost
     create_ripple()
-    exec_shell_cmd("export BOOST_ROOT=~/boost_1_70_0")
+    exec_shell_cmd(boost_env_path)
     create_libarchive()
     create_sqlite3()
     create_soci()
