@@ -53,13 +53,13 @@ if __name__ == '__main__':
 
 
     boost_env_path = "export BOOST_ROOT=" + path_boost
-    create_ripple()
     print("-----------------ripple compile successfully")
     exec_shell_cmd(boost_env_path)
+    create_ripple()
     print("----------------start shared object compile")
-    create_libarchive()
-    create_sqlite3()
-    create_soci()
-    exec_shell_cmd(target)
-    commnet = "cd build && cp librippled.so " + path_target 
-    exec_shell_cmd(commnet)
+    #create_libarchive()
+    #create_sqlite3()
+    #create_soci()
+    #exec_shell_cmd(target)
+    #commnet = "cd build && cp librippled.so " + path_target 
+    #exec_shell_cmd(commnet)
