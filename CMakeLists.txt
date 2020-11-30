@@ -6,6 +6,7 @@ endif ()
 
 project (rippled)
 set(PIC_FLAG "-fPIC")
+set (BOOST_ROOT "${CMAKE_CURRENT_SOURCE_DIR}/../../boost/boost_1_70_0")
 
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/Builds/CMake")
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/Builds/CMake/deps")
