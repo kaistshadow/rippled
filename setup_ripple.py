@@ -27,7 +27,7 @@ def create_sqlite3():
     print("-------------- end sqlite3 ")
 
 def create_ripple():
-    exec_shell_cmd("mkdir build; cd build; cmake ../; make -j 6")
+    exec_shell_cmd("mkdir build; cd build; cmake -DCMAKE_BUILD_TYPE=Debug ../; make -j 6")
 
 
 
